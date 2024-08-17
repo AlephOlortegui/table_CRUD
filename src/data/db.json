@@ -1,0 +1,52 @@
+{
+  "employee": [
+    {
+      "username": "Leanne Graham",
+      "email": "Sincere@april.biz",
+      "phone": "1-770-736-8031",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "username": "Ervin Howell",
+      "email": "Shanna@melissa.tv",
+      "phone": "90566-7771"
+    },
+    {
+      "id": 3,
+      "username": "Clementine Bauch",
+      "email": "Nathan@yesenia.net",
+      "phone": "59590-4157"
+    },
+    {
+      "id": 4,
+      "username": "Patricia Lebsack",
+      "email": "Julianne.OConner@kory.org",
+      "phone": "493-170-9623"
+    },
+    {
+      "id": 5,
+      "username": "Chelsey Dietrich",
+      "email": "Lucio_Hettinger@annie.ca",
+      "phone": "(254)954-1289"
+    },
+    {
+      "username": "Clementina DuBuque",
+      "email": "Rey.Padberg@karina.biz",
+      "phone": "024-648-0438",
+      "id": 6
+    },
+    {
+      "username": "Glenna Reichert",
+      "email": "aim_McDermott@dana.io",
+      "phone": "76495-3109",
+      "id": 7
+    },
+    {
+      "username": "l",
+      "email": "ll@d.c",
+      "phone": "9",
+      "id": 8
+    }
+  ]
+}
