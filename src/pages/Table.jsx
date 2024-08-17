@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import { Spinner } from "../components/Spinner"
 import { useFetch } from "../hooks/useFetch"
 
@@ -42,10 +43,11 @@ export const Table = () => {
                     <td>{row.username}</td>
                     <td>{row.email}</td>
                     <td>{row.phone}</td>
+                    {/* Details button down here */}
                     <td>
-                        <button className="btn btn-primary btn-sm">
+                        <Link to={`/details/${row.id}`}  className="btn btn-primary btn-sm">
                             <i className="bi bi-info-circle-fill"></i>
-                        </button>
+                        </Link>
                     </td>
                 </tr>
               ))}

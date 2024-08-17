@@ -8,6 +8,7 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import { Header } from './pages/Header';
 import { Table } from './pages/Table';
 import { NotFound } from './pages/NotFound';
+import { Detail } from './pages/Detail';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
         <div className="container">
           <Routes>
             <Route path="/" element={<Table />}/>
+            <Route path='/details/:id' element={<Detail />} />
             <Route path='*' element={<NotFound />} />
           </Routes>
         </div>
