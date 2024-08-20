@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 
-export const useFetch = (uri) => {
+export const useFetch = (uri, setSomething=null) => { // setSomthing for Edit.jsx
   const [data, setData] = useState(null)
   const [isPending, setIsPending] = useState(true)
   const [error, setError] = useState(false)
@@ -12,7 +12,10 @@ export const useFetch = (uri) => {
         throw Error('could not fetch the data for that resource')
       }
       let data = await res.json();
-      setData(data);
+      //console.log(data)
+      //setData(data);
+        if(setSomething) setSomething({...data})
+        else setData(data)
       setIsPending(false);
       setError(false);
     } catch (err) {
@@ -28,7 +31,7 @@ export const useFetch = (uri) => {
     /* return () => {
       second
     } */
-  }, [uri])
+  }, [uri, setSomething])
   
 
   return {data, isPending, error}

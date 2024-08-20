@@ -5,10 +5,12 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 // you can import the whole pack.
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
-import { Header } from './pages/Header';
+import { Header } from './components/Header';
 import { Table } from './pages/Table';
 import { NotFound } from './pages/NotFound';
 import { Detail } from './pages/Detail';
+import { Create } from './pages/Create';
+import { Edit } from './pages/Edit';
 
 function App() {
 
@@ -20,7 +22,9 @@ function App() {
         <div className="container">
           <Routes>
             <Route path="/" element={<Table />}/>
+            <Route path='/create' element={<Create />} />
             <Route path='/details/:id' element={<Detail />} />
+            <Route path='/edit/:id' element={<Edit />} />
             <Route path='*' element={<NotFound />} />
           </Routes>
         </div>
