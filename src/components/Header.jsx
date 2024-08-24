@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import { ThemeBtn } from "./ThemeBtn"
 
 export const Header = () => {
   return (
@@ -11,6 +12,7 @@ export const Header = () => {
         <Link className='mx-3' to="/">Home</Link>
         <Link className='mx-3' to="/create">Create</Link>
       </nav>
+      <ThemeBtn />
     </header>
   )
 }
