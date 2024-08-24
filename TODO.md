@@ -9,3 +9,7 @@
 - preguntar a chatGPT dale todo 
 - si! setData es importante por ahora
 - como es posible la comunicacion de SetData? y afecta esto?
+
+
+# Falta
+- valid form besides "required"
